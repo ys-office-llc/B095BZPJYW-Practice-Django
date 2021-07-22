@@ -153,4 +153,7 @@ cython_debug/
 # SQLite database files
 *.sqlite3
 
+# 隠しファイル保護
+.admin
+
 # End of https://www.toptal.com/developers/gitignore/api/django
