@@ -13,7 +13,7 @@ class CreateSnippetTest(TestCase):
 
 class SnippetDetailTest(TestCase):
     def test_should_resolve_snippet_detail(self):
-        found = resolve("/snippets/1")
+        found = resolve("/snippets/1/")
         self.assertEqual(snippet_detail, found.func)
 
 class EditSnippetTest(TestCase):
