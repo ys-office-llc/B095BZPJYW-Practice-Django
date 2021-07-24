@@ -27,13 +27,13 @@ class TopPageRenderSnippetsTest(TestCase):
         request = RequestFactory().get("/")
         request.user = self.user
         response = top(request)
-        self.asserContains(response, self.snippet.title)
+        self.assertContains(response, self.snippet.title)
 
-    def test_should_return_snippet_username(self):
+    def test_should_return_username(self):
         request = RequestFactory().get("/")
         request.user = self.user
         response = top(request)
-        self.asserContains(response, self.user.username)
+        self.assertContains(response, self.user.username)
 
 
 class CreateSnippetTest(TestCase):
