@@ -29,4 +29,4 @@ class TopPageTest(TestCase):
 
     def test_top_returns_expected_template(self):
         response = self.client.get("/")
-        self.assertTemplateNotUsed(response, "snippets/top.html")
+        self.assertTemplateUsed(response, "snippets/top.html")
