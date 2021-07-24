@@ -1,5 +1,19 @@
 # B095BZPJYW-Practice-Django
 
+# アプリケーション実行方法
+
+```python
+$ python manage.py runserver 
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 24, 2021 - 19:58:40
+Django version 3.1.7, using settings 'djangosnippets.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+```
+
 # 履歴
 ## 図 1.21 テンプレートエンジン実装後
 ![image](https://user-images.githubusercontent.com/31363256/126855884-fe0c2027-4ff9-455d-a005-667eb7466859.png)
