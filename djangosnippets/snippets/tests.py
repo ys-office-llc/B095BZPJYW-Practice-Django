@@ -23,10 +23,10 @@ class EditSnippetTest(TestCase):
 
 
 class TopPageTest(TestCase):
-    def test_top_returns_200(self):
+    def test_top_returns_200_and_expected_title(self):
         response = self.client.get("/")
-        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Django スニペット", status_code=200)
 
-    def test_top_returns_expected_content(self):
+    def test_top_returns_expected_template(self):
         response = self.client.get("/")
-        self.assertEqual(response.content, b"Hello World")
+        self.assertTemplateNotUsed(response, "snippets/top.html")
